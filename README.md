@@ -2,8 +2,8 @@
 Repositorio para llevar a cabo el trabajo sobre Gestión de visualización del programa, de la asignatura de EGC 17/18
 
 Integrantes del grupo:
-- Juan Pablo Argote
+- Juan Pablo Argote Ortiz
 - Jesús Enrique Bozada Márquez
 - Alejandro Gallego Segura
 - Anastasio Rafael Leon Gonzalez
-- Jesus Sosa 
+- Jesus Sosa Sánchez
