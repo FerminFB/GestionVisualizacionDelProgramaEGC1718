@@ -7,3 +7,8 @@ Integrantes del grupo:
 - Alejandro Gallego Segura
 - Anastasio Rafael Leon Gonzalez
 - Jesus Sosa Sánchez
+
+Para instalar dependecias necesarias: 
+```
+pip install -r requeriments.txt
+```
