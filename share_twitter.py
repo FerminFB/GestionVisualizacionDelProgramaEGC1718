@@ -2,8 +2,23 @@ from __future__ import absolute_import, print_function
 
 import tweepy
 import webbrowser
+import sqlite3
+
+
 #Esta es una URL que permite compartir por twitter desde cualquier cuenta
 webbrowser.open("https://twitter.com/intent/tweet?text=Hello%20world")
+
+#Conexión con la base de datos de sqlite (donde estan los datos del calendario)
+conn = sqlite3.connect('programa.db')
+c = conn.cursor()
+
+
+for row in c.execute('SELECT * FROM PROGRAMA'):
+        print (row)
+
+
+for row in c.execute('SELECT * FROM CHARLAS'):
+        print (row)
 
 ####### Con esto podemos twittear desde una cuenta fija el calendario
 # Registrándose en esta página. nos creamos una app y miramos la siguiente información: http://apps.twitter.com
