@@ -1,80 +1,80 @@
-# Gestion Visualizacion Del Programa EGC 17/18
-Repositorio para llevar a cabo el trabajo sobre Gesti√≥n de visualizaci√≥n del programa, de la asignatura de EGC 17/18
+# GestiÛn Visualizacion Del Programa EGC 17/18
+Repositorio para llevar a cabo el trabajo sobre GestiÛn de visualizaciÛn del programa, de la asignatura de EGC 17/18
 
 Integrantes del grupo:
 - Juan Pablo Argote Ortiz
-- Jes√∫s Enrique Bozada M√°rquez
+- Jes˙s Enrique Bozada M·rquez
 - Alejandro Gallego Segura
 - Anastasio Rafael Leon Gonzalez
-- Jesus Sosa S√°nchez
+- Jesus Sosa S·nchez
 
 Para instalar dependecias necesarias: 
 ```
 pip install -r requirements.txt
 ```
-### Planificaci√≥n del proyecto
+### PlanificaciÛn del proyecto
 
-La planificaci√≥n realizada en este proyecto ha estado orientada al seguimiento por parte de los profesores en los diferentes Milestones, por tanto, se presentar√° dividida en secciones siguiendo el orden de √©stos.
+La planificaciÛn realizada en este proyecto ha estado orientada al seguimiento por parte de los profesores en los diferentes Milestones, por tanto, se presentar· dividida en secciones siguiendo el orden de Èstos.
 
 #### Milestone 1 - Ecosistema preparado.
 
-El objetivo principal que se propone cumplir antes de este milestone es la realizaci√≥n de una o m√°s reuniones con objetivo de conocernos como equipo, llegar a un acuerdo de la idea a desarrollar y de las trazas generales que se deben seguir para este cometido.
+El objetivo principal que se propone cumplir antes de este milestone es la realizaciÛn de una o m·s reuniones con objetivo de conocernos como equipo, llegar a un acuerdo de la idea a desarrollar y de las trazas generales que se deben seguir para este cometido.
 
-En el trascurso de estas reuniones se ha decido utilizar un grupo de Telegram como canal principal de comunicaci√≥n debido a la situaci√≥n laboral de tres componentes del grupo. Adicionalmente se decidi√≥ que la gestion de tareas se realice a trav√©s de GitHub, como se detallar√° m√°s adelante.
+En el trascurso de estas reuniones se ha decido utilizar un grupo de Telegram como canal principal de comunicaciÛn debido a la situaciÛn laboral de tres componentes del grupo. Adicionalmente se decidiÛ que la gestiÛn de tareas se realice a travÈs de GitHub, como se detallar· m·s adelante.
 
-Dentro de las tareas a realizar durante este periodo de tiempo, se debe destacar la de conocimiento de dependencias con otros subsistemas del proyecto general. Esperando recabar dicha informaci√≥n a trav√©s del equipo de integraci√≥n.
+Dentro de las tareas a realizar durante este periodo de tiempo, se debe destacar la de conocimiento de dependencias con otros subsistemas del proyecto general. Esperando recabar dicha informaciÛn a travÈs del equipo de integraciÛn.
 
 #### Milestone 2 - Sistema funcionando con incremento.
 
-Se aprovecha la revisi√≥n del Milestone 1 para aclarar cuales son las l√≠neas que debe seguir el proyecto para adaptarse a las dependencias encontradas.
+Se aprovecha la revisiÛn del Milestone 1 para aclarar cuales son las lÌ≠neas que debe seguir el proyecto para adaptarse a las dependencias encontradas.
 
-Se prevee la utilizaci√≥n de una API aportada por otro equipo de trabajo, por tanto, se decide realizar durante este periodo de tiempo labores de estudio sobre las tecnolog√≠as, mientras el otro equipo aporta mayor informaci√≥n en cuanto a dicha API.
+Se prevee la utilizaciÛn de una API aportada por otro equipo de trabajo, por tanto, se decide realizar durante este periodo de tiempo labores de estudio sobre las tecnologÌas, mientras el otro equipo aporta mayor informaciÛn en cuanto a dicha API.
 
-Se realizar√° una instanciaci√≥n base de un proyecto de Python sobre Django por Alejandro, debido a sus conocimientos, para que los dem√°s compa√±eros puedan avanzar en un futuro en las siguientes funcionalidades:
-- Mostrar programa por Twitter. (Jes√∫s)
+Se realizar· una instanciaciÛn base de un proyecto de Python sobre Django por Alejandro, debido a sus conocimientos, para que los dem·s compaÒeros puedan avanzar en un futuro en las siguientes funcionalidades:
+- Mostrar programa por Twitter. (Jes˙s)
 - Mostrar programa por Telegram. (Anastasio)
 - Mostrar programa en formato pdf. (Alejandro)
 - Mostrar programa como Calendar de Google. (Enrique)
-- Mostrar programa en un aplicaci√≥n Android. (Juan Pablo)
+- Mostrar programa en un aplicaciÛn Android. (Juan Pablo)
 
-En cuanto a la gesti√≥n de tareas se decide utilizar las issues de GitHub que ser√°n gestionadas como cards desde la vista de Proyecto del repositorio, una tarea podr√° encontrarse en tres fases diferentes:
+En cuanto a la gestiÛn de tareas se decide utilizar las issues de GitHub que ser·n gestionadas como cards desde la vista de Proyecto del repositorio, una tarea podr· encontrarse en tres fases diferentes:
 
-- **ToDo:** aquellas tareas que est√©n pendientes de su comienzo.
+- **ToDo:** aquellas tareas que est·n pendientes de su comienzo.
 
 - **In progress:** aquellas tareas que ya han comenzado.
 
 - **Done:** aquellas tareas que han sido terminadas. 
 
-#### Milestone 3 - Taller de automatizaci√≥n.
+#### Milestone 3 - Taller de automatizaciÛn.
 
-De cara a este Milestone, debido a un gran retraso en las funcionalidades, causado por la ausencia de la API que debe ser proporcionada por el equipo de programa, se decide implementar las funcionalidades en torno a ficheros de hoja de c√°lculo de excel.
+De cara a este Milestone, debido a un gran retraso en las funcionalidades, causado por la ausencia de la API que debe ser proporcionada por el equipo de programa, se decide implementar las funcionalidades en torno a ficheros de hoja de c·lculo de excel.
 
-Las principales tareas planificadas para este periodo de tiempo ser√°n la implementaci√≥n de una base de datos SQLite, en la que introducir la informaci√≥n del programa que se obtendr√° de dichos ficheros de hoja de c√°lculo. El estudio de que herramientas utilizar para la automatizaci√≥n de la construcci√≥n, la ejecuci√≥n de pruebas y la integraci√≥n.
+Las principales tareas planificadas para este periodo de tiempo ser·n la implementaciÛn de una base de datos SQLite, en la que introducir la informaciÛn del programa que se obtendr· de dichos ficheros de hoja de c·lculo. El estudio de que herramientas utilizar para la automatizaciÛn de la construcciÛn, la ejecuciÛn de pruebas y la integraciÛn.
 
 #### Milestone 4 - Entrega y defensa de trabajos.
 
-Para este Milestone, tras la revisi√≥n del anterior con el profesor, se llega a la conclusi√≥n de que se debe comenzar a realizar las labores de pruebas, integraci√≥n y automatizaci√≥n sin dejar atras la funcionalidad, debido al retraso existente. Por tanto, se decide que los componentes del grupo continuen el desarrollo de sus funcionalidades hasta la realizaci√≥n de una reuni√≥n una semana del Milestone para comenzar en com√∫n las tareas mencionadas anteriormente.
+Para este Milestone, tras la revisiÛn del anterior con el profesor, se llega a la conclusiÛn de que se debe comenzar a realizar las labores de pruebas, integraciÛn y automatizaci√≥n sin dejar atras la funcionalidad, debido al retraso existente. Por tanto, se decide que los componentes del grupo continuen el desarrollo de sus funcionalidades hasta la realizaciÛn de una reuniÛn una semana del Milestone para comenzar en com˙n las tareas mencionadas anteriormente.
 
-Debido a una interacci√≥n con el grupo de programa en el que se aporta, por parte de ellos, una posible soluci√≥n a la ausencia de API que consumir, se estudia la posibilidad de cambiar el desarrollo para adaptarlo a la propuesta, debido a la falta de tiempo y el retraso acumulado se decide ignorar la propuesta y continuar con la planificaci√≥n actual.
+Debido a una interacciÛn con el grupo de programa en el que se aporta, por parte de ellos, una posible soluciÛn a la ausencia de API que consumir, se estudia la posibilidad de cambiar el desarrollo para adaptarlo a la propuesta, debido a la falta de tiempo y el retraso acumulado se decide ignorar la propuesta y continuar con la planificaciÛn actual.
 
-Por √∫ltimo, de cara a la entrega se decide avanzar lo m√°ximo posible en las tareas comunes para el beneficio de todos los componentes del grupo por encima del avance en las tareas individuales
+Por ˙ltimo, de cara a la entrega se decide avanzar lo m·ximo posible en las tareas comunes para el beneficio de todos los componentes del grupo por encima del avance en las tareas individuales
 
 ### Entorno de desarrollo
-A continuaci√≥n se describen los entornos de desarrollo utilizados por el equipos. Se presentan dos diferentes debido a las necesidades del proyecto.
+A continuaciÛn se describen los entornos de desarrollo utilizados por el equipos. Se presentan dos diferentes debido a las necesidades del proyecto.
 
-En primer lugar, se describe el entorno utilizado para desarrollar las funcionalidades la aplicaci√≥n en python:
+En primer lugar, se describe el entorno utilizado para desarrollar las funcionalidades la aplicaciÛn en python:
 - **JetBrains PyCharm:** versi√≥n 2017.2.4 x64.
-- **Python:** versi√≥n 2.7.
-- **SQLite:** versi√≥n 3.10.1.
-- **Django:** versi√≥n 1.11.8.
+- **Python:** versiÛn 2.7.
+- **SQLite:** versiÛn 3.10.1.
+- **Django:** versiÛn 1.11.8.
 - **Docker**.
 - **TravisCI**.
 	
-Por √∫ltimo, se describe el entorno utilizado para desarrollar la aplicaci√≥n en android:
-- **Android Studio:** versi√≥n 3.0.1 build #AI-171.4443003.
+Por ˙ltimo, se describe el entorno utilizado para desarrollar la aplicaci√≥n en android:
+- **Android Studio:** versiÛn 3.0.1 build #AI-171.4443003.
 - **JRE:** 1.8.0_152-release-915-b01 amd64.
 - **JVM:** OpenJDK 64-Bit.
-- **SQLite:** versi√≥n 3.10.1.
+- **SQLite:** versiÛn 3.10.1.
 - **Jenkins**.
 
 ### GestiÛn del cambio, incidencias y depuraciÛn
@@ -128,29 +128,29 @@ ConexiÛn entre incidencias y commits
 Cada vez que se lleva a cabo un commit importante sobre alguna de las ramas, este ser· aÒadido en la incidencia, ya que **Github** permite localizar los commits mediante su ëIDí y si este se copia en la **issue** correspondiente, se enlazan ambos.
 
 
-### Gesti√≥n de la construcci√≥n e integraci√≥n continua
-Para la gesti√≥n de la construcci√≥n no hemos basado en el gestor de paquetes y librerias de python ***pip*** en su versi√≥n **9.0.1**. Con lo que si necesitabamos alguna librer√≠a ejecutabamos el siguiente c√≥digo ```pip install <nombre de la librer√≠a>```, con esto ya la tendr√≠amos disponible para usarla.
+### GestiÛn de la construcciÛn e integraciÛn continua
+Para la gestiÛn de la construcciÛn no hemos basado en el gestor de paquetes y librerias de python ***pip*** en su versiÛn **9.0.1**. Con lo que si necesitabamos alguna librer· ejecutabamos el siguiente cÛdigo ```pip install <nombre de la librer·>```, con esto ya la tendr√Ìamos disponible para usarla.
 
-En cuanto a la gesti√≥n de la integraci√≥n continua hemos utilizado ***Travis Cl*** iteraccionando con nuestro repositorio de ***GitHub*** de tal manera que el proceso utilizado es el siguiente:
-- Creaci√≥n del fichero **.travis.yml**.
+En cuanto a la gestiÛn de la integraciÛn continua hemos utilizado ***Travis Cl*** iteraccionando con nuestro repositorio de ***GitHub*** de tal manera que el proceso utilizado es el siguiente:
+- CreaciÛn del fichero **.travis.yml**.
 - Trabajar en dicha rama y hacer commit.
-- Travis se encarga de bajarse es √∫ltimo commit.
+- Travis se encarga de bajarse es ˙ltimo commit.
 - Le ejecuta los correspondientes tests.
-- Por √∫ltimo, vuelve a arrancar servidor de nuestra aplicaci√≥n.
+- Por ˙ltimo, vuelve a arrancar servidor de nuestra aplicaciÛn.
 
-Tambi√©n mencionar que nuestra aplicaci√≥n es arrancada en **Docker**, que se configura en el **.travis.yml** para que este funcione correctamente.
+TambiÈn mencionar que nuestra aplicaciÛn es arrancada en **Docker**, que se configura en el **.travis.yml** para que este funcione correctamente.
 
-### Gesti√≥n de liberaciones, despliegue y entregas
+### GestiÛn de liberaciones, despliegue y entregas
 
-**Gesti√≥n de liberaciones**
+**GestiÛn de liberaciones**
 
-La liberaci√≥n continua la gestionamos mediante el servicio ***Travis CI***, utilizado para probar nuestro proyecto alojado en el repositorio de ***GitHub***. Para ello hacemos un fork al repositorio de ***GitHub*** y en ***Travis CI*** sincronizamos el mismo. Una vez hecho esto, automatizadas las pruebas del c√≥digo, procedemos a ejecutarlas. ***Travis CI*** nos notifica por correo electr√≥nico el resultado de la prueba, tanto si haya tenido √©xito como con la aparici√≥n de un fallo. Si ha tenido √©xito lo consideraremos como una nueva versi√≥n del c√≥digo.
+La liberaciÛn continua la gestionamos mediante el servicio ***Travis CI***, utilizado para probar nuestro proyecto alojado en el repositorio de ***GitHub***. Para ello hacemos un fork al repositorio de ***GitHub*** y en ***Travis CI*** sincronizamos el mismo. Una vez hecho esto, automatizadas las pruebas del cÛdigo, procedemos a ejecutarlas. ***Travis CI*** nos notifica por correo electrÛnico el resultado de la prueba, tanto si haya tenido Èxito como con la apariciÛn de un fallo. Si ha tenido Èxito lo consideraremos como una nueva versiÛn del cÛdigo.
 
-**Gesti√≥n de Despliegue**
+**GestiÛn de Despliegue**
 
-El despliegue se har√° mediante una imagen creada de ***Docker*** que ser√° subida al repositorio general proporcionado por el equipo de integraci√≥n. Una vez la imagen haya pasado las pruebas de ***Travis CI***, el archivo ***.travis.yml*** establecer√° la nueva versi√≥n y se actualizar√° en la nueva imagen de ***Docker***.
+El despliegue se har· mediante una imagen creada de ***Docker*** que ser· subida al repositorio general proporcionado por el equipo de integraciÛn. Una vez la imagen haya pasado las pruebas de ***Travis CI***, el archivo ***.travis.yml*** establecerÒa la nueva versiÛn y se actualizar√° en la nueva imagen de ***Docker***.
 
-**Pol√≠tica de nombrado e identificaci√≥n de los entregables**
+**PolÌtica de nombrado e identificaciÛn de los entregables**
 
-El entregable completo se realizar√° en nuestro repositorio de ***GitHub***, donde el documento podr√° encontrarse en el archivo ***README.md***
+El entregable completo se realizar√° en nuestro repositorio de ***GitHub***, donde el documento podr· encontrarse en el archivo ***README.md***
 
