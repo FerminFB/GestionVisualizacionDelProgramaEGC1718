@@ -81,6 +81,7 @@ Por Ãºltimo, se describe el entorno utilizado para desarrollar la aplicaciÃ³n en
 Para la gestión de incidencias se realiza mediante **issues** de **Github**. Se crearán en caso de que se vaya a realizar un avance o cambio en el proyecto, incluido los errores que aparezcan o tareas que se vayan a desempeñar.
 Para la creación de éstas no hemos utilizado plantillas y se lleva a cabo el siguiente esquema: se pone un título breve y descriptivo mediante el cual se identifique bien el contenido que va a tener esa incidencia y una descripción en la que se explique el problema que ha tenido o la tarea realizada. Además, se le añadirá una etiqueta, el proyecto asociado, el hito correspondiente y al miembro o miembros que la han creado, en el caso de que se tenga alguna duda o encuentre un problema se asignará a todos los miembros del grupo ya sea para que se resuelva con la mayor rapidez posible o bien por si alguien en concreto no supiera resolverlo.  En caso de que se encuentre un “bug” se adjuntará el error encontrado en la descripción de la incidencia.
 La incidencia solo se cerrará en el caso de que se esté seguro que se ha terminado o se haya solucionado, todos los miembros podrán añadir comentarios si lo ven oportuno.
+
 Etiquetas utilizadas:
 Desarrollo
 Documentación
