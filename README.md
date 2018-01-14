@@ -161,3 +161,8 @@ El despliegue se hará mediante una imagen creada de ***Docker*** que será subi
 
 El entregable completo se realizará en nuestro repositorio de ***GitHub***, donde el documento podrá encontrarse en el archivo ***README.md***
 
+### Mapa de herramientas
+
+![alt text](https://github.com/enruiq/GestionVisualizacionDelProgramaEGC1718/blob/master/documentacion/imagenes/Herramientas.png)
+
+Imagen 1 - Mapa de Herramientas
