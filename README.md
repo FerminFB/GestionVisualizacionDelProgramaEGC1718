@@ -26,7 +26,7 @@ Dentro de las tareas a realizar durante este periodo de tiempo, se debe destacar
 
 #### Milestone 2 - Sistema funcionando con incremento.
 
-Se aprovecha la revisión del Milestone 1 para aclarar cuales son las lí­neas que debe seguir el proyecto para adaptarse a las dependencias encontradas.
+Se aprovecha la revisión del Milestone 1 para aclarar cuales son las líneas que debe seguir el proyecto para adaptarse a las dependencias encontradas.
 
 Se prevee la utilización de una API aportada por otro equipo de trabajo, por tanto, se decide realizar durante este periodo de tiempo labores de estudio sobre las tecnologías, mientras el otro equipo aporta mayor información en cuanto a dicha API.
 
@@ -53,7 +53,7 @@ Las principales tareas planificadas para este periodo de tiempo serán la implem
 
 #### Milestone 4 - Entrega y defensa de trabajos.
 
-Para este Milestone, tras la revisión del anterior con el profesor, se llega a la conclusión de que se debe comenzar a realizar las labores de pruebas, integración y automatizaciÃ³n sin dejar atras la funcionalidad, debido al retraso existente. Por tanto, se decide que los componentes del grupo continuen el desarrollo de sus funcionalidades hasta la realización de una reunión una semana del Milestone para comenzar en común las tareas mencionadas anteriormente.
+Para este Milestone, tras la revisión del anterior con el profesor, se llega a la conclusión de que se debe comenzar a realizar las labores de pruebas, integración y automatización sin dejar atras la funcionalidad, debido al retraso existente. Por tanto, se decide que los componentes del grupo continuen el desarrollo de sus funcionalidades hasta la realización de una reunión una semana del Milestone para comenzar en común las tareas mencionadas anteriormente.
 
 Debido a una interacción con el grupo de programa en el que se aporta, por parte de ellos, una posible solución a la ausencia de API que consumir, se estudia la posibilidad de cambiar el desarrollo para adaptarlo a la propuesta, debido a la falta de tiempo y el retraso acumulado se decide ignorar la propuesta y continuar con la planificación actual.
 
@@ -129,7 +129,7 @@ Cada vez que se lleva a cabo un commit importante sobre alguna de las ramas, est
 
 
 ### Gestión de la construcción e integración continua
-Para la gestión de la construcción no hemos basado en el gestor de paquetes y librerias de python ***pip*** en su versión **9.0.1**. Con lo que si necesitabamos alguna librerá ejecutabamos el siguiente código ```pip install <nombre de la librerá>```, con esto ya la tendrÃíamos disponible para usarla.
+Para la gestión de la construcción no hemos basado en el gestor de paquetes y librerias de python ***pip*** en su versión **9.0.1**. Con lo que si necesitabamos alguna librerá ejecutabamos el siguiente código ```pip install <nombre de la librerá>```, con esto ya la tendríamos disponible para usarla.
 
 En cuanto a la gestión de la integración continua hemos utilizado ***Travis Cl*** iteraccionando con nuestro repositorio de ***GitHub*** de tal manera que el proceso utilizado es el siguiente:
 - Creación del fichero **.travis.yml**.
@@ -148,9 +148,9 @@ La liberación continua la gestionamos mediante el servicio ***Travis CI***, uti
 
 **Gestión de Despliegue**
 
-El despliegue se hará mediante una imagen creada de ***Docker*** que será subida al repositorio general proporcionado por el equipo de integración. Una vez la imagen haya pasado las pruebas de ***Travis CI***, el archivo ***.travis.yml*** establecerña la nueva versión y se actualizarÃ¡ en la nueva imagen de ***Docker***.
+El despliegue se hará mediante una imagen creada de ***Docker*** que será subida al repositorio general proporcionado por el equipo de integración. Una vez la imagen haya pasado las pruebas de ***Travis CI***, el archivo ***.travis.yml*** establecerña la nueva versión y se actualizará en la nueva imagen de ***Docker***.
 
 **Política de nombrado e identificación de los entregables**
 
-El entregable completo se realizarÃ¡ en nuestro repositorio de ***GitHub***, donde el documento podrá encontrarse en el archivo ***README.md***
+El entregable completo se realizará en nuestro repositorio de ***GitHub***, donde el documento podrá encontrarse en el archivo ***README.md***
 
