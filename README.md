@@ -16,7 +16,6 @@ pip install -r requirements.txt
 A continuación se describen los entornos de desarrollo utilizados por el equipos. Se presentan dos diferentes debido a las necesidades del proyecto.
 
 En primer lugar, se describe el entorno utilizado para desarrollar las funcionalidades la aplicación en python:
-
 -**JetBrains PyCharm:** versión 2017.2.4 x64
 -**Python:** versión 2.7
 -**SQLite:** versión 3.10.1
@@ -25,7 +24,6 @@ En primer lugar, se describe el entorno utilizado para desarrollar las funcional
 -**TravisCI**
 	
 Por último, se describe el entorno utilizado para desarrollar la aplicación en android:
-
 -**Android Studio:** versión 3.0.1 build #AI-171.4443003
 -**JRE:** 1.8.0_152-release-915-b01 amd64
 -**JVM:** OpenJDK 64-Bit
