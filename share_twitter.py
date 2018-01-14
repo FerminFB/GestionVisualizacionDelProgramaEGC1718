@@ -1,45 +1,113 @@
+#-*- coding: utf-8 -*-
 from __future__ import absolute_import, print_function
 
-import tweepy
 import webbrowser
 import sqlite3
 
 
+
+
 #Esta es una URL que permite compartir por twitter desde cualquier cuenta
-webbrowser.open("https://twitter.com/intent/tweet?text=Hello%20world")
+#https://twitter.com/intent/tweet?text=
+
 
 #Conexión con la base de datos de sqlite (donde estan los datos del calendario)
 conn = sqlite3.connect('programa.db')
 c = conn.cursor()
 
+aux= ''
+for row in c.execute('SELECT * FROM PROGRAMA WHERE DIA="Monday"'):
+        for row1 in c.execute('SELECT EVENTO FROM CHARLAS'):
+                 lunes = row[1] + row[2] + "  "
+                 aux += row[4]+" "+ row[5] +  ": " + row1[0] + "   \n "
 
-for row in c.execute('SELECT * FROM PROGRAMA'):
-        print (row)
+lunes +=  aux
+lunes += 'https://institucional.us.es/innosoft/ #isoftdays'
+lunes.replace(" ", "",)
 
+webbrowser.open("https://twitter.com/intent/tweet?text=" +lunes[0:289])
+webbrowser.open("https://twitter.com/intent/tweet?text=" +lunes[289:575])
+webbrowser.open("https://twitter.com/intent/tweet?text=" +lunes[576:864])
+webbrowser.open("https://twitter.com/intent/tweet?text=" +lunes[864:1153])
 
-for row in c.execute('SELECT * FROM CHARLAS'):
-        print (row)
-
-####### Con esto podemos twittear desde una cuenta fija el calendario
-# Registrándose en esta página. nos creamos una app y miramos la siguiente información: http://apps.twitter.com
-# The consumer key and secret will be generated for you after
-#consumer_key="mTSMT3SgEJNQcWFCYCenWACqs"
-#consumer_secret="2ssH7SErBEYW1F6Gc0ByvBD0AjGf2sYlRTJvNjMBRdCIrbz25T"
-
-# After the step above, you will be redirected to your app's page.
-# Create an access token under the the "Your access token" section
-#access_token="392627830-xuY08mATOmAotrjITfLxMX1J9FJjZ8Hd73kgy0LZ"
-#access_token_secret="RZcootqGzwrcUEMJHn6eIPsnv8YvSOPpxAgEf9Q25GhAj"
-
-#auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-#auth.set_access_token(access_token, access_token_secret)
-
-#api = tweepy.API(auth)
-
-#####Creación del tweet desde la cuenta que has seleccionado
-#api.update_status('Hello world https://institucional.us.es/innosoft/ #isoftdays #test vía @InnoSoftDays')
+print(lunes)
 
 
 
 
+aux1= ''
+for row in c.execute('SELECT * FROM PROGRAMA WHERE DIA="Tuesday"'):
+        for row1 in c.execute('SELECT EVENTO FROM CHARLAS'):
+            martes = row[1] + row[2] + "  "
+            aux1 += row[4] + " " + row[5] + ": " + row1[0] + "   \n "
 
+martes += aux1
+martes += 'https://institucional.us.es/innosoft/ #isoftdays'
+martes.replace(" ", "",)
+
+#webbrowser.open("https://twitter.com/intent/tweet?text=" +martes[0:290])
+#webbrowser.open("https://twitter.com/intent/tweet?text=" +martes[291:575])
+#webbrowser.open("https://twitter.com/intent/tweet?text=" +martes[576:864])
+#webbrowser.open("https://twitter.com/intent/tweet?text=" +martes[864:1153])
+
+#print(martes)
+
+
+#print(aux1)
+
+aux2= ''
+for row in c.execute('SELECT * FROM PROGRAMA WHERE DIA="Wednesday"'):
+    for row1 in c.execute('SELECT EVENTO FROM CHARLAS'):
+        mierc = row[1] +"  "+ row[2] +"  "
+        aux2 += row[4] + " " + row[5] + ": " + row1[0] + "   \n "
+
+mierc += aux2
+mierc += 'https://institucional.us.es/innosoft/ #isoftdays'
+mierc.replace(" ", "",)
+
+#webbrowser.open("https://twitter.com/intent/tweet?text=" +mierc[0:277])
+#webbrowser.open("https://twitter.com/intent/tweet?text=" +mierc[277:558])
+#webbrowser.open("https://twitter.com/intent/tweet?text=" +mierc[558:845])
+#webbrowser.open("https://twitter.com/intent/tweet?text=" +mierc[845:1153])
+
+#print(mierc)
+
+#print(mierc)
+
+aux3= ''
+for row in c.execute('SELECT * FROM PROGRAMA WHERE DIA="Thursday"'):
+    for row1 in c.execute('SELECT EVENTO FROM CHARLAS'):
+        jueves = row[1] + row[2] + "  "
+        aux3 += row[4] + " " + row[5] + ": " + row1[0] + "   \n "
+
+jueves += aux3
+jueves += 'https://institucional.us.es/innosoft/ #isoftdays'
+jueves.replace(" ", "",)
+
+#webbrowser.open("https://twitter.com/intent/tweet?text=" +jueves[0:292])
+#webbrowser.open("https://twitter.com/intent/tweet?text=" +jueves[296:575])
+#webbrowser.open("https://twitter.com/intent/tweet?text=" +jueves[580:864])
+#webbrowser.open("https://twitter.com/intent/tweet?text=" +jueves[868:1153])
+
+#print(jueves)
+
+#print(jueves)
+
+aux4= ''
+for row in c.execute('SELECT * FROM PROGRAMA WHERE DIA="Friday"'):
+    for row1 in c.execute('SELECT EVENTO FROM CHARLAS'):
+        viernes = row[1] + row[2] + "  "
+        aux4 += row[4] + " " + row[5] + ": " + row1[0] + "   \n "
+
+viernes += aux4
+viernes += 'https://institucional.us.es/innosoft/ #isoftdays'
+viernes.replace(" ", "",)
+
+#webbrowser.open("https://twitter.com/intent/tweet?text=" +viernes[0:289])
+#webbrowser.open("https://twitter.com/intent/tweet?text=" +viernes[294:575])
+#webbrowser.open("https://twitter.com/intent/tweet?text=" +viernes[576:864])
+#webbrowser.open("https://twitter.com/intent/tweet?text=" +viernes[864:1153])
+
+
+
+#print(viernes)
