@@ -46,11 +46,11 @@ También mencionar que nuestra aplicación es arrancada en **Docker**, que se co
 
 **Gestión de liberaciones**
 
-La liberación continua la gestionamos mediante el servicio ***Travis CI***, utilizado para probar nuestro proyecto alojado en el repositorio de GitHub. Para ello hacemos un fork al repositorio de ***GitHub*** y en Travis CI sincronizamos el mismo. Una vez hecho esto, automatizadas las pruebas del código, procedemos a ejecutarlas. ***Travis CI*** nos notifica por correo electrónico el resultado de la prueba, tanto si haya tenido éxito como con la aparición de un fallo. Si ha tenido éxito lo consideraremos como una nueva versión del código.
+La liberación continua la gestionamos mediante el servicio ***Travis CI***, utilizado para probar nuestro proyecto alojado en el repositorio de ***GitHub***. Para ello hacemos un fork al repositorio de ***GitHub*** y en ***Travis CI*** sincronizamos el mismo. Una vez hecho esto, automatizadas las pruebas del código, procedemos a ejecutarlas. ***Travis CI*** nos notifica por correo electrónico el resultado de la prueba, tanto si haya tenido éxito como con la aparición de un fallo. Si ha tenido éxito lo consideraremos como una nueva versión del código.
 
 **Gestión de Despliegue**
 
-El despliegue se hará mediante una imagen creada de Docker que será subida al repositorio general proporcionado por el equipo de integración. Una vez la imagen haya pasado las pruebas de ***Travis CI***, el archivo .travis.yml establecerá la nueva versión y se actualizará en la nueva imagen de ***Docker***.
+El despliegue se hará mediante una imagen creada de ***Docker*** que será subida al repositorio general proporcionado por el equipo de integración. Una vez la imagen haya pasado las pruebas de ***Travis CI***, el archivo ***.travis.yml*** establecerá la nueva versión y se actualizará en la nueva imagen de ***Docker***.
 
 **Política de nombrado e identificación de los entregables**
 
