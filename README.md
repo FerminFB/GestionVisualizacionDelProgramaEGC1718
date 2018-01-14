@@ -10,5 +10,5 @@ Integrantes del grupo:
 
 Para instalar dependecias necesarias: 
 ```
-pip install -r requeriments.txt
+pip install -r requirements.txt
 ```
