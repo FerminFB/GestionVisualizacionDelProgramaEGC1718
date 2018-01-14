@@ -12,6 +12,25 @@ Para instalar dependecias necesarias:
 ```
 pip install -r requirements.txt
 ```
+### Entorno de desarrollo
+A continuación se describen los entornos de desarrollo utilizados por el equipos. Se presentan dos diferentes debido a las necesidades del proyecto.
+
+En primer lugar, se describe el entorno utilizado para desarrollar las funcionalidades la aplicación en python:
+
+-**JetBrains PyCharm:** versión 2017.2.4 x64
+-**Python:** versión 2.7
+-**SQLite:** versión 3.10.1
+-**Django:** versión 1.11.8
+-**Docker**
+-**TravisCI**
+	
+Por último, se describe el entorno utilizado para desarrollar la aplicación en android:
+
+-**Android Studio:** versión 3.0.1 build #AI-171.4443003
+-**JRE:** 1.8.0_152-release-915-b01 amd64
+-**JVM:** OpenJDK 64-Bit
+-**SQLite:** versión 3.10.1
+-**Jenkins**
 
 ### Gestión de la construcción e integración continua
 Para la gestión de la construcción no hemos basado en el gestor de paquetes y librerias de python ***pip*** en su versión **9.0.1**. Con lo que si necesitabamos alguna librería ejecutabamos el siguiente código ```pip install <nombre de la librería>```, con esto ya la tendríamos disponible para usarla.
