@@ -165,4 +165,4 @@ El entregable completo se realizará en nuestro repositorio de ***GitHub***, don
 
 ![alt text](https://github.com/enruiq/GestionVisualizacionDelProgramaEGC1718/blob/master/documentacion/imagenes/Herramientas.png)
 
-Imagen 1 - Mapa de Herramientas
+***Imagen 1 - Mapa de Herramientas***
