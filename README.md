@@ -12,11 +12,11 @@ Para instalar dependecias necesarias:
 ```
 pip install -r requirements.txt
 ```
-###Planificación del proyecto
+### Planificación del proyecto
 
 La planificación realizada en este proyecto ha estado orientada al seguimiento por parte de los profesores en los diferentes Milestones, por tanto, se presentará dividida en secciones siguiendo el orden de éstos.
 
-####Milestone 1 - Ecosistema preparado.
+#### Milestone 1 - Ecosistema preparado.
 
 El objetivo principal que se propone cumplir antes de este milestone es la realización de una o más reuniones con objetivo de conocernos como equipo, llegar a un acuerdo de la idea a desarrollar y de las trazas generales que se deben seguir para este cometido.
 
@@ -24,7 +24,7 @@ En el trascurso de estas reuniones se ha decido utilizar un grupo de Telegram co
 
 Dentro de las tareas a realizar durante este periodo de tiempo, se debe destacar la de conocimiento de dependencias con otros subsistemas del proyecto general. Esperando recabar dicha información a través del equipo de integración.
 
-####Milestone 2 - Sistema funcionando con incremento.
+#### Milestone 2 - Sistema funcionando con incremento.
 
 Se aprovecha la revisión del Milestone 1 para aclarar cuales son las líneas que debe seguir el proyecto para adaptarse a las dependencias encontradas.
 
@@ -45,13 +45,13 @@ En cuanto a la gestión de tareas se decide utilizar las issues de GitHub que se
 
 - **Done:** aquellas tareas que han sido terminadas. 
 
-####Milestone 3 - Taller de automatización.
+#### Milestone 3 - Taller de automatización.
 
 De cara a este Milestone, debido a un gran retraso en las funcionalidades, causado por la ausencia de la API que debe ser proporcionada por el equipo de programa, se decide implementar las funcionalidades en torno a ficheros de hoja de cálculo de excel.
 
 Las principales tareas planificadas para este periodo de tiempo serán la implementación de una base de datos SQLite, en la que introducir la información del programa que se obtendrá de dichos ficheros de hoja de cálculo. El estudio de que herramientas utilizar para la automatización de la construcción, la ejecución de pruebas y la integración.
 
-####Milestone 4 - Entrega y defensa de trabajos.
+#### Milestone 4 - Entrega y defensa de trabajos.
 
 Para este Milestone, tras la revisión del anterior con el profesor, se llega a la conclusión de que se debe comenzar a realizar las labores de pruebas, integración y automatización sin dejar atras la funcionalidad, debido al retraso existente. Por tanto, se decide que los componentes del grupo continuen el desarrollo de sus funcionalidades hasta la realización de una reunión una semana del Milestone para comenzar en común las tareas mencionadas anteriormente.
 
