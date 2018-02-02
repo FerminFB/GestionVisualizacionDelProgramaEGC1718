@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+td, th {
+    border: 3px solid #dddddd;
+    text-align: center;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+{% endblock %}
+
+
+{% block body %}
+
+
+<table>
+    <tr>
+        <th></th>
+        <th>Día</th>
+        <th>Hora</th>
+        <th>Título</th>
+        <th>Código de sesión</th>
+    </tr>
+{% if programas %}
+
+    {% for programa in programas %}
+
+
+    <tr>
+        <td>
+            <a href="https://twitter.com/intent/tweet?text={{ programa.dia }}:%20{{ programa.hora_inicio }}%20--%20{{ programa.hora_fin }}%20{{ programa.titulo }}" class="twitter-share-button" data-show-count="false">Tweet
+           </a><script async defer src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+        </td>
+        <td WIDTH="200">{{ programa.dia }} : {{ programa.fecha }}</td>
+
+        <td WIDTH="200">{{ programa.hora_inicio }} -- {{ programa.hora_fin }}</td>
+            {% if programa.titulo %}
+             <td WIDTH="200">{{ programa.titulo }} </td>
+            {% else %}
+            <td></td>
+            {% endif %}
+        {% if programa.sessioncode %}
+        <td WIDTH="200">{{ programa.sessioncode }} </td>
+        {% endif %}
+
+    </tr>
+    {% endfor %}
+
+    {% else %}
+    <h1>NO HAY REGISTROS</h1>
+    {% endif %}
+
+</table></table>
+
+<br>
+{% endblock %}
