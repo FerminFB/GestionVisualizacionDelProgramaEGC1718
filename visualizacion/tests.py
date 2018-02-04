@@ -12,7 +12,7 @@ class ProgramMethodTests(TestCase):
 
     #
     def test_dia_from_program_notNone(self):
-        conn = sqlite3.connect('visualizacion.db')
+        conn = sqlite3.connect('programa.db')
         c = conn.cursor()
 
         for row in c.execute('SELECT DIA FROM PROGRAMA'):
@@ -20,14 +20,14 @@ class ProgramMethodTests(TestCase):
 
 
     def test_fecha_from_program_notNone(self):
-        conn = sqlite3.connect('visualizacion.db')
+        conn = sqlite3.connect('programa.db')
         c = conn.cursor()
 
         for row in c.execute('SELECT FECHA FROM PROGRAMA'):
             self.assertIsNotNone(row)
 
     def test_horaFin_from_program_notNone(self):
-        conn = sqlite3.connect('visualizacion.db')
+        conn = sqlite3.connect('programa.db')
         c = conn.cursor()
 
         for row in c.execute('SELECT HORA_FIN FROM PROGRAMA'):
@@ -35,7 +35,7 @@ class ProgramMethodTests(TestCase):
 
 
     def test_sessionCode_from_charla_notNone(self):
-        conn = sqlite3.connect('visualizacion.db')
+        conn = sqlite3.connect('programa.db')
         c = conn.cursor()
 
         for row in c.execute('SELECT SESSIONCODE FROM CHARLAS'):
@@ -43,7 +43,7 @@ class ProgramMethodTests(TestCase):
 
 
     def test_evento_from_charla_notNone(self):
-        conn = sqlite3.connect('visualizacion.db')
+        conn = sqlite3.connect('programa.db')
         c = conn.cursor()
 
         for row in c.execute('SELECT EVENTO FROM CHARLAS'):
@@ -51,7 +51,7 @@ class ProgramMethodTests(TestCase):
 
 
     def test_titulo_from_charla_notNone(self):
-        conn = sqlite3.connect('visualizacion.db')
+        conn = sqlite3.connect('programa.db')
         c = conn.cursor()
 
         for row in c.execute('SELECT TITULO FROM CHARLAS'):
@@ -59,7 +59,7 @@ class ProgramMethodTests(TestCase):
 
 
     def test_ponentes_from_charla_notNone(self):
-        conn = sqlite3.connect('visualizacion.db')
+        conn = sqlite3.connect('programa.db')
         c = conn.cursor()
 
         for row in c.execute('SELECT PONENTES FROM CHARLAS'):
