@@ -5,5 +5,19 @@ python:
 install:
   - pip install -r requirements.txt
 
+notifications:
+  email:
+    recipients:
+    - jesosa94@gmail.com
+    on_success: always  # default: change
+    on_failure: always  # default: change
+deploy:
+  provider: heroku
+
+  api_key: db61c64a-5315-435e-951c-20820a09538d
+  app: programa-egc
+  on:
+    repo: enruiq/GestionVisualizacionDelProgramaEGC1718
+
 script:
  - python manage.py test visualizacion/
