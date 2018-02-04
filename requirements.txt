@@ -6,3 +6,4 @@ openpyxl==2.4.9
 Pillow==5.0.0
 pytz==2017.3
 reportlab==3.4.0
+gunicorn==19.7.1
