@@ -4,13 +4,26 @@ from __future__ import unicode_literals
 from django.test import TestCase
 from django.urls import reverse
 from .models import Programa,Charlas
+from django.db.utils import OperationalError
 import sqlite3
 
 # Create your tests here.
 
 class ProgramMethodTests(TestCase):
 
-    #
+
+    def test_connect_to_bd(self):
+        try:
+            conn = sqlite3.connect('programa.db')
+            c = conn.cursor()
+        except OperationalError:
+            connected = False
+        else:
+            connected = True
+
+
+        self.assertEqual(connected,True)
+
     def test_dia_from_program_notNone(self):
         conn = sqlite3.connect('programa.db')
         c = conn.cursor()
