@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from visualizacion import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^export_pdf/$', views.export_pdf(), name="export_pdf"),
     url(r'^visualizacion/', include('visualizacion.urls')),
-
 ]
