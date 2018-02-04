@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
+
+from django.shortcuts import render
+from  visualizacion.models import Programa,Charlas
 import sqlite3
 from io import BytesIO
 from django.http import HttpResponse
@@ -8,7 +11,30 @@ from reportlab.lib.units import cm
 from reportlab.pdfgen import canvas
 from reportlab.platypus import Table, TableStyle
 
+# Create your views here.
 
+def home(request):
+
+    return render(request, 'programa/principal.html')
+
+
+def programa_list(request):
+
+    programa = Programa.objects.all()
+    contexto = {'programas' :programa}
+
+    charla = Charlas.objects.all()
+    contexto2 = {'charlas': charla}
+
+    return render(request,'programa/principal.html',contexto)
+
+
+def charla_list(request):
+    charla = Charlas.objects.all()
+    contexto2 = {'charlas': charla}
+    return render(request, 'programa/principal2.html', contexto2)
+	
+	
 def export_pdf():
     response = HttpResponse(mimetype='application/pdf')
     response['Content-Disposition'] = 'attachment; filename=programa.pdf'
@@ -55,8 +81,4 @@ def export_pdf():
     buffer.close()
     response.write(pdf)
     return response
-
-
-
-
 

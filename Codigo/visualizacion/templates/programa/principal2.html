@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+td, th {
+    border: 3px solid #dddddd;
+    text-align: center;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+{% endblock %}
+
+
+{% block body %}
+
+
+<table>
+    <tr>
+        <th></th>
+        <th>Código de sesión</th>
+        <th>Evento</th>
+        <th>Título</th>
+        <th>Ponentes</th>
+
+    </tr>
+{% if charlas %}
+
+    {% for charla in charlas %}
+
+
+    <tr>
+        <td>
+        <a href="https://twitter.com/intent/tweet?text={{ charla.evento }}: {{ charla.titulo }}" class="twitter-share-button" data-show-count="false">Tweet
+           </a><script async defer src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </td>
+        <td WIDTH="200">{{ charla.sessioncode }} </td>
+
+        <td WIDTH="200">{{ charla.evento }} </td>
+
+        <td WIDTH="200">{{ charla.titulo }} </td>
+        <td WIDTH="200">{{ charla.ponentes }} </td>
+
+
+    </tr>
+    {% endfor %}
+
+    {% else %}
+    <h1>NO HAY REGISTROS</h1>
+    {% endif %}
+
+</table></table>
+
+<br>
+
+{% endblock %}
