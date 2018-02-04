@@ -12,7 +12,7 @@ import sqlite3
 
 
 #Conexión con la base de datos de sqlite (donde estan los datos del calendario)
-conn = sqlite3.connect('programa.db')
+conn = sqlite3.connect('visualizacion.db')
 c = conn.cursor()
 
 aux= ''
