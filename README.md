@@ -1,6 +1,8 @@
 # Gestión Visualizacion Del Programa EGC 17/18
 Repositorio para llevar a cabo el trabajo sobre Gestión de visualización del programa, de la asignatura de EGC 17/18
 
+https://programa-egc.herokuapp.com/
+
 Integrantes del grupo:
 - Juan Pablo Argote Ortiz
 - Jesús Enrique Bozada Márquez
@@ -74,7 +76,6 @@ En primer lugar, se describe el entorno utilizado para desarrollar las funcional
 - **Python:** versión 2.7.
 - **SQLite:** versión 3.10.1.
 - **Django:** versión 1.11.8.
-- **Docker**.
 - **TravisCI**.
 	
 Por último, se describe el entorno utilizado para desarrollar la aplicación en android:
@@ -145,7 +146,7 @@ En cuanto a la gestión de la integración continua hemos utilizado ***Travis Cl
 - Le ejecuta los correspondientes tests.
 - Por último, vuelve a arrancar servidor de nuestra aplicación.
 
-También mencionar que nuestra aplicación es arrancada en **Docker**, que se configura en el **.travis.yml** para que este funcione correctamente.
+Pasando unos tests, que se configura en el **.travis.yml** para que este funcione correctamente.
 
 ### Gestión de liberaciones, despliegue y entregas
 
@@ -155,7 +156,7 @@ La liberación continua la gestionamos mediante el servicio ***Travis CI***, uti
 
 **Gestión de Despliegue**
 
-El despliegue se hará mediante una imagen creada de ***Docker*** que será subida al repositorio general proporcionado por el equipo de integración. Una vez la imagen haya pasado las pruebas de ***Travis CI***, el archivo ***.travis.yml*** establecerña la nueva versión y se actualizará en la nueva imagen de ***Docker***.
+ Una vez se haya pasado las pruebas de ***Travis CI***, el archivo ***.travis.yml*** establecerá la nueva versión y se actualizará en nuestro servidor que será ***Heroku***.
 
 **Política de nombrado e identificación de los entregables**
 
