@@ -112,7 +112,7 @@ Commit
 Se realizará un **commit** cuando se obtenga un avance importante en el proyecto o se solucione algún error. Para esto se utilizará los siguientes comandos (se tendrá en cuenta la rama en la que se está situado):
 **git status** 				 # detectar modificación de archivos
 **git add** <nombre del fichero modificado> o git add.
-**git commit -a -m** “comentario de la nueva modificación”
+**git commit -m** “comentario de la nueva modificación #(número de la incidencia)”
 **git push origin** <rama>  		#publicar el commit en el repositorio Github
 **git checkout** <nombreArchivo> 	#para revertir un cambio antes de haber hecho un push
 **git log -p**				#listar todos los commits realizados
@@ -134,6 +134,7 @@ No se realizará ningún **merge** a la rama principal (master) hasta que no est
 
 Conexión entre incidencias y commits
 Cada vez que se lleva a cabo un commit importante sobre alguna de las ramas, este será añadido en la incidencia, ya que **Github** permite localizar los commits mediante su ‘ID’ y si este se copia en la **issue** correspondiente, se enlazan ambos.
+Para los últimos commit se utilizó una forma mejor de enlazar ambas y es añadidiendo el #(número de la incidencia) en el comentario a la hora de llevar a cabo el commit.
 
 
 ### Gestión de la construcción e integración continua
