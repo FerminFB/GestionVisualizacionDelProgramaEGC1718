@@ -87,18 +87,26 @@ Por último, se describe el entorno utilizado para desarrollar la aplicación en
 
 ### Gestión del cambio, incidencias y depuración
 Para la gestión de incidencias se realiza mediante **issues** de **Github**. Se crearán en caso de que se vaya a realizar un avance o cambio en el proyecto, incluido los errores que aparezcan o tareas que se vayan a desempeñar.
-Para la creación de éstas no hemos utilizado plantillas y se lleva a cabo el siguiente esquema: se pone un título breve y descriptivo mediante el cual se identifique bien el contenido que va a tener esa incidencia y una descripción en la que se explique el problema que ha tenido o la tarea realizada. Además, se le añadirá una etiqueta, el proyecto asociado, el hito correspondiente y al miembro o miembros que la han creado, en el caso de que se tenga alguna duda o encuentre un problema se asignará a todos los miembros del grupo ya sea para que se resuelva con la mayor rapidez posible o bien por si alguien en concreto no supiera resolverlo.  En caso de que se encuentre un “bug” se adjuntará el error encontrado en la descripción de la incidencia.
+Para la creación de éstas hemos utilizado la siguiente plantilla:
+- Título breve y descriptivo mediante el cual se identifique bien el contenido que va a tener esa incidencia.
+- Descripción en la que se explique el problema que ha tenido o la tarea realizada.
+- Error: adjuntar error en el caso de que exista
+- Prioridad: baja, media, alta y urgente 
+- Etiqueta
+- Proyecto asociado
+- Hito correspondiente
+- Miembro o miembros que la han creado, en el caso de que se tenga alguna duda o encuentre un problema se asignará a todos los miembros del grupo ya sea para que se resuelva con la mayor rapidez posible o bien por si alguien en concreto no supiera resolverlo.  En caso de que se encuentre un “bug” se adjuntará el error encontrado en la descripción de la incidencia.
 La incidencia solo se cerrará en el caso de que se esté seguro que se ha terminado o se haya solucionado, todos los miembros podrán añadir comentarios si lo ven oportuno.
 
 Etiquetas utilizadas:
-Desarrollo
-Documentación
-Planificación
-Despliegue
-Bug
-Otros
-Formación
-Reunión
+- Desarrollo
+- Documentación
+- Planificación
+- Despliegue
+- Bug
+- Otros
+- Formación
+- Reunión
 
 Tareas:
 La gestión de las tareas se controlará mediante el tablero proporcionado por **Github**, por lo que estas pasarán por tres estados que se irán modificando manualmente según sea oportuno: **To Do**, **In Progress** y **Done**.
@@ -110,26 +118,26 @@ Para la gestión del código se usa la herramienta Git, utilizándola para reali
 
 Commit
 Se realizará un **commit** cuando se obtenga un avance importante en el proyecto o se solucione algún error. Para esto se utilizará los siguientes comandos (se tendrá en cuenta la rama en la que se está situado):
-**git status** 				 # detectar modificación de archivos
-**git add** <nombre del fichero modificado> o git add.
-**git commit -m** “comentario de la nueva modificación #(número de la incidencia)”
-**git push origin** <rama>  		#publicar el commit en el repositorio Github
-**git checkout** <nombreArchivo> 	#para revertir un cambio antes de haber hecho un push
-**git log -p**				#listar todos los commits realizados
+- **git status** 				 # detectar modificación de archivos
+- **git add** <nombre del fichero modificado> o git add.
+- **git commit -m** “comentario de la nueva modificación #(número de la incidencia)”
+- **git push origin** <rama>  		#publicar el commit en el repositorio Github
+- **git checkout** <nombreArchivo> 	#para revertir un cambio antes de haber hecho un push
+- **git log -p**				#listar todos los commits realizados
 
 Ramas
 Para tener un mejor control de las funcionalidades, se ha creado una rama por cada una, existiendo en total 4 ramas secundarias y 1 rama principal:
-master (principal)
-twitter
-pdf
-telegram
-aplicación Android (puesto que se desarrolla en otro lenguaje y no tiene nada que ver con las demás funcionalidades se encuentra en un repositorio aparte.
+- master (principal)
+- twitter
+- pdf
+- telegram
+- aplicación Android (puesto que se desarrolla en otro lenguaje y no tiene nada que ver con las demás funcionalidades se encuentra en un repositorio aparte.
 
 Comandos utilizados en las ramas:
-**git branch** 			#ver la rama en la que estás situado
-**git branch** <nombreRama>	# crear una nueva rama
-**git checkout** <nombreRama> 	# para cambiar de rama
-**git merge** <nombreRama>	#unir la rama que se le pasa a la que estas situado
+- **git branch** 			#ver la rama en la que estás situado
+- **git branch** <nombreRama>	# crear una nueva rama
+- **git checkout** <nombreRama> 	# para cambiar de rama
+- **git merge** <nombreRama>	#unir la rama que se le pasa a la que estas situado
 No se realizará ningún **merge** a la rama principal (master) hasta que no esté totalmente completa la funcionalidad y haya pasado todas las pruebas necesarias.
 
 Conexión entre incidencias y commits
