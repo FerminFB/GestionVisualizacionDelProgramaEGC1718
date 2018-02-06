@@ -46,6 +46,24 @@
 </tbody>
     {% endfor %}
 
+    <div class="pagination">
+    <span class="step-links">
+        {% if charlas.has_previous %}
+            <a href="?page=1">&laquo; first</a>
+            <a href="?page={{ programas.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ charlas.number }} of {{ charlas.paginator.num_pages }}.
+        </span>
+
+        {% if charlas.has_next %}
+            <a href="?page={{ charlas.next_page_number }}">next</a>
+            <a href="?page={{ charlas.paginator.num_pages }}">last &raquo;</a>
+        {% endif %}
+    </span>
+</div>
+
     {% else %}
     <h1>NO HAY REGISTROS</h1>
     {% endif %}
