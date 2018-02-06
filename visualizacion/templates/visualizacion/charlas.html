@@ -1,57 +1,49 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 
-
-{% block head %}
-<style>
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 80%;
-}
-td, th {
-    border: 3px solid #dddddd;
-    text-align: center;
-    padding: 10px;
-}
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
-</style>
-{% endblock %}
+{% block section %}
+<br>
+<h1>Charlas del evento</h1>
+<br>
 
 
-{% block body %}
 
+<a href="/">
+    <button class="button">
+        Volver al programa
+    </button>
+</a>
 
-<table>
-    <tr>
-        <th></th>
-        <th>Código de sesión</th>
-        <th>Evento</th>
-        <th>Título</th>
-        <th>Ponentes</th>
-
-    </tr>
+<table class="table-hover table-bordered">
+    <thead>
+        <tr>
+            <th></th>
+            <th style="text-align: center">Código de sesión</th>
+            <th style="text-align: center">Evento</th>
+            <th style="text-align: center">Título</th>
+            <th style="text-align: center">Ponentes</th>
+        </tr>
+    </thead>
 {% if charlas %}
 
     {% for charla in charlas %}
 
-
+<tbody>
     <tr>
         <td>
         <a href="https://twitter.com/intent/tweet?text={{ charla.evento }}: {{ charla.titulo }}" class="twitter-share-button" data-show-count="false">Tweet
            </a><script async defer src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </td>
-        <td WIDTH="200">{{ charla.sessioncode }} </td>
+        <td WIDTH="200" style="text-align: center">{{ charla.sessioncode }} </td>
 
-        <td WIDTH="200">{{ charla.evento }} </td>
+        <td WIDTH="200" style="text-align: center">{{ charla.evento }} </td>
 
         <td WIDTH="200">{{ charla.titulo }} </td>
-        <td WIDTH="200">{{ charla.ponentes }} </td>
+        <td WIDTH="200" style="text-align: center">{{ charla.ponentes }} </td>
 
 
     </tr>
+</tbody>
     {% endfor %}
 
     {% else %}

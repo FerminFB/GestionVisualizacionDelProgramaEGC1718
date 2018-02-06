@@ -2,9 +2,16 @@
 {% load staticfiles %}
 
 {% block section %}
+
+
 <br>
 <h1>Programa del evento</h1>
 <br>
+<a href="/charlas">
+    <button class="button">
+        Mostrar charlas
+    </button>
+</a>
 <table class="table-hover table-bordered">
     <thead>
         <tr>
@@ -18,7 +25,7 @@
 
     {% if programas %}
     {% for programa in programas %}
-        <tbody>
+
             <tr>
                 <td style="text-align: center">
                     <a href="https://twitter.com/intent/tweet?text={{ programa.dia }}:%20{{ programa.hora_inicio }}%20-%20{{ programa.hora_fin }}%20{{ programa.titulo }}" class="twitter-share-button" data-show-count="false">Tweet
