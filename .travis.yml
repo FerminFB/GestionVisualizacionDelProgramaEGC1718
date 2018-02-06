@@ -15,7 +15,7 @@ notifications:
 deploy:
   provider: heroku
 
-  api_key: db61c64a-5315-435e-951c-20820a09538d
+  api_key: fa9f8883-2d4c-4590-85ae-1ed7d7fda7f0
   app: programa-egc
   on:
     repo: enruiq/GestionVisualizacionDelProgramaEGC1718
