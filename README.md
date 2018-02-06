@@ -3,6 +3,10 @@ Repositorio para llevar a cabo el trabajo sobre Gestión de visualización del p
 
 https://programa-egc.herokuapp.com/
 
+# Grupo 2
+
+# ID de opera: grupo 23 (en la url el 96)
+
 Integrantes del grupo:
 - Juan Pablo Argote Ortiz
 - Jesús Enrique Bozada Márquez
