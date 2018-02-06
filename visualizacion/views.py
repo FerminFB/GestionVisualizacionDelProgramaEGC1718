@@ -10,20 +10,40 @@ from reportlab.lib import colors
 from reportlab.lib.units import cm
 from reportlab.pdfgen import canvas
 from reportlab.platypus import Table, TableStyle
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.shortcuts import render
 
 
 def programa_list(request):
+    programa_lista = Programa.objects.all()
+    page = request.GET.get('page', 1)
 
-    programa = Programa.objects.all()
-    contexto = {'programas': programa}
+    paginator = Paginator(programa_lista, 10)
+    try:
+        programas = paginator.page(page)
+    except PageNotAnInteger:
+        programas = paginator.page(1)
+    except EmptyPage:
+        programas = paginator.page(paginator.num_pages)
 
-    return render(request, 'visualizacion/index.html', contexto)
+    return render(request, 'visualizacion/index.html', { 'programas': programas })
 
 
 def charla_list(request):
-    charla = Charlas.objects.all()
-    contexto = {'charlas': charla}
-    return render(request, 'visualizacion/charlas.html', contexto)
+    charla_lista = Charlas.objects.all()
+    page = request.GET.get('page', 1)
+
+    paginator = Paginator(charla_lista, 10)
+    try:
+        charlas = paginator.page(page)
+    except PageNotAnInteger:
+        charlas = paginator.page(1)
+    except EmptyPage:
+        charlas = paginator.page(paginator.num_pages)
+
+    return render(request, 'visualizacion/charlas.html', { 'charlas': charlas })
+
+
 
 
 def export_pdf(request):

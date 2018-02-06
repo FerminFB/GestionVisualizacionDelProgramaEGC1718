@@ -47,6 +47,25 @@
             </tr>
         </tbody>
     {% endfor %}
+
+    <div class="pagination">
+    <span class="step-links">
+        {% if programas.has_previous %}
+            <a href="?page=1">&laquo; first</a>
+            <a href="?page={{ programas.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ programas.number }} of {{ programas.paginator.num_pages }}.
+        </span>
+
+        {% if programas.has_next %}
+            <a href="?page={{ programas.next_page_number }}">next</a>
+            <a href="?page={{ programas.paginator.num_pages }}">last &raquo;</a>
+        {% endif %}
+    </span>
+</div>
+
     {% else %}
     <h1>NO HAY REGISTROS</h1>
     {% endif %}
