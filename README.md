@@ -118,12 +118,12 @@ Para la gestión del código se usa la herramienta Git, utilizándola para reali
 
 Commit
 Se realizará un **commit** cuando se obtenga un avance importante en el proyecto o se solucione algún error. Para esto se utilizará los siguientes comandos (se tendrá en cuenta la rama en la que se está situado):
-- **git status** 				 # detectar modificación de archivos
-- **git add** <nombre del fichero modificado> o git add.
-- **git commit -m** “comentario de la nueva modificación #(número de la incidencia)”
-- **git push origin** <rama>  		#publicar el commit en el repositorio Github
-- **git checkout** <nombreArchivo> 	#para revertir un cambio antes de haber hecho un push
-- **git log -p**				#listar todos los commits realizados
+- ```git status``` 				 # detectar modificación de archivos
+- ```git add <nombre del fichero modificado>``` o ```git add .```
+- ```git commit -m “comentario de la nueva modificación #(número de la incidencia)”```
+- ```git push origin <rama>```  		# publicar el commit en el repositorio Github
+- ```git checkout <nombreArchivo>``` 	# para revertir un cambio antes de haber hecho un push
+- ```git log -p```				# listar todos los commits realizados
 
 Ramas
 Para tener un mejor control de las funcionalidades, se ha creado una rama por cada una, existiendo en total 4 ramas secundarias y 1 rama principal:
@@ -134,10 +134,10 @@ Para tener un mejor control de las funcionalidades, se ha creado una rama por ca
 - aplicación Android (puesto que se desarrolla en otro lenguaje y no tiene nada que ver con las demás funcionalidades se encuentra en un repositorio aparte.
 
 Comandos utilizados en las ramas:
-- **git branch** 			#ver la rama en la que estás situado
-- **git branch** <nombreRama>	# crear una nueva rama
-- **git checkout** <nombreRama> 	# para cambiar de rama
-- **git merge** <nombreRama>	#unir la rama que se le pasa a la que estas situado
+- ```git branch```			# ver la rama en la que estás situado
+- ```git branch <nombreRama>```	# crear una nueva rama
+- ```git checkout <nombreRama>``` 	# para cambiar de rama
+- ```git merge <nombreRama>```	# unir la rama que se le pasa a la que estas situado
 No se realizará ningún **merge** a la rama principal (master) hasta que no esté totalmente completa la funcionalidad y haya pasado todas las pruebas necesarias.
 
 Conexión entre incidencias y commits
@@ -146,7 +146,7 @@ Para los últimos commit se utilizó una forma mejor de enlazar ambas y es añad
 
 
 ### Gestión de la construcción e integración continua
-Para la gestión de la construcción no hemos basado en el gestor de paquetes y librerias de python ***pip*** en su versión **9.0.1**. Con lo que si necesitabamos alguna librerá ejecutabamos el siguiente código ```pip install <nombre de la librerá>```, con esto ya la tendríamos disponible para usarla.
+Para la gestión de la construcción no hemos basado en el gestor de paquetes y librerias de python ***pip*** en su versión **9.0.1**. Con lo que si necesitabamos alguna librería ejecutabamos el siguiente código ```pip install <nombre de la librería>```, con esto ya la tendríamos disponible para usarla.
 
 En cuanto a la gestión de la integración continua hemos utilizado ***Travis Cl*** iteraccionando con nuestro repositorio de ***GitHub*** de tal manera que el proceso utilizado es el siguiente:
 - Creación del fichero **.travis.yml**.
