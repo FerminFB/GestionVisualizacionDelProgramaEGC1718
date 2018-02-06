@@ -87,7 +87,7 @@ Por último, se describe el entorno utilizado para desarrollar la aplicación en
 - **JRE:** 1.8.0_152-release-915-b01 amd64.
 - **JVM:** OpenJDK 64-Bit.
 - **SQLite:** versión 3.10.1.
-- **Jenkins**.
+- **TravisCI**.
 
 ### Gestión del cambio, incidencias y depuración
 Para la gestión de incidencias se realiza mediante **issues** de **Github**. Se crearán en caso de que se vaya a realizar un avance o cambio en el proyecto, incluido los errores que aparezcan o tareas que se vayan a desempeñar.
@@ -177,6 +177,6 @@ El entregable completo se realizará en nuestro repositorio de ***GitHub***, don
 
 ### Mapa de herramientas
 
-![alt text](https://github.com/enruiq/GestionVisualizacionDelProgramaEGC1718/blob/master/Documentacion/Imagenes/Herramientas.png)
+![Mapa de herramientas]( GestionVisualizacionDelProgramaEGC1718/Documentacion/Imagenes/Herramientas.png )
 
 ***Imagen 1 - Mapa de Herramientas***
