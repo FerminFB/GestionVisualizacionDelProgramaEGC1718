@@ -60,9 +60,9 @@ def export_pdf(request):
         bottomMargin=18,
     )
     Story = []
-    # im = Image(settings.STATIC_ROOT+'/images/logoUS.png', 1 * inch, 1 * inch)
-    # Story.append(im)
-    # Story.append(Spacer(2, 24))
+    im = Image(settings.STATIC_ROOT+'/images/logoUS.png', 1 * inch, 1 * inch)
+    Story.append(im)
+    Story.append(Spacer(2, 24))
     estilos = getSampleStyleSheet()
     estilos.add(ParagraphStyle(name='Justify', alignment=TA_JUSTIFY))
     resultado = []
