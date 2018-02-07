@@ -19,7 +19,7 @@ from django.shortcuts import render, redirect
 
 
 def programa_list(request):
-    programa_lista = Programa.objects.all()
+    programa_lista = Programa.objects.order_by('sessioncode')
     page = request.GET.get('page', 1)
 
     paginator = Paginator(programa_lista, 10)
@@ -30,11 +30,11 @@ def programa_list(request):
     except EmptyPage:
         programas = paginator.page(paginator.num_pages)
 
-    return render(request, 'visualizacion/index.html', {'programas': programas})
+    return render(request, 'visualizacion/index.html', { 'programas': programas })
 
 
 def charla_list(request):
-    charla_lista = Charlas.objects.all()
+    charla_lista = Charlas.objects.order_by('sessioncode')
     page = request.GET.get('page', 1)
 
     paginator = Paginator(charla_lista, 10)
@@ -45,7 +45,7 @@ def charla_list(request):
     except EmptyPage:
         charlas = paginator.page(paginator.num_pages)
 
-    return render(request, 'visualizacion/charlas.html', {'charlas': charlas})
+    return render(request, 'visualizacion/charlas.html', { 'charlas': charlas })
 
 
 def export_pdf(request):
