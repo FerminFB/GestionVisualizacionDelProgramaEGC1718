@@ -1,18 +1,14 @@
-# Gestión Visualizacion Del Programa EGC 17/18
-Repositorio para llevar a cabo el trabajo sobre Gestión de visualización del programa, de la asignatura de EGC 17/18
+# Gestión Visualizacion Del Programa EGC 17/18 (Septiembre)
+Repositorio para llevar a cabo el trabajo sobre Gestión de visualización del programa, de la asignatura de EGC 17/18 para la segunda convocatoria de Septiembre.
 
 https://programa-egc.herokuapp.com/
-
-# Grupo 2
-
-# ID de opera: grupo 23 (en la url el 96)
 
 Integrantes del grupo:
 - Juan Pablo Argote Ortiz
 - Jesús Enrique Bozada Márquez
-- Alejandro Gallego Segura
+- Sara Donaire
 - Anastasio Rafael Leon Gonzalez
-- Jesus Sosa Sánchez
+- Fermin
 
 Para instalar dependecias necesarias: 
 ```
@@ -44,10 +40,10 @@ Se aprovecha la revisión del Milestone 1 para aclarar cuales son las líneas qu
 Se prevee la utilización de una API aportada por otro equipo de trabajo, por tanto, se decide realizar durante este periodo de tiempo labores de estudio sobre las tecnologías, mientras el otro equipo aporta mayor información en cuanto a dicha API.
 
 Se realizará una instanciación base de un proyecto de Python sobre Django por Alejandro, debido a sus conocimientos, para que los demás compañeros puedan avanzar en un futuro en las siguientes funcionalidades:
-- Mostrar programa por Twitter. (Jesús)
 - Mostrar programa por Telegram. (Anastasio)
-- Mostrar programa en formato pdf. (Alejandro)
+- Mejorar el formato del PDF. (Fermin)
 - Mostrar programa como Calendar de Google. (Enrique)
+- Mostrar programa por Facebook. (Sara)
 - Mostrar programa en una aplicación Android. (Juan Pablo)
 
 En cuanto a la gestión de tareas se decide utilizar las issues de GitHub que serán gestionadas como cards desde la vista de Proyecto del repositorio, una tarea podrá encontrarse en tres fases diferentes:
