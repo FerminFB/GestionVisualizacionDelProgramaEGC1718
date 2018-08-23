@@ -8,7 +8,7 @@ Integrantes del grupo:
 - Jesús Enrique Bozada Márquez
 - Sara Donaire
 - Anastasio Rafael Leon Gonzalez
-- Fermin Fernández Borrego
+- Fermín Fernández Borrego
 
 Para instalar dependecias necesarias: 
 ```
