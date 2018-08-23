@@ -6,7 +6,7 @@ https://programa-egc-septiembre.herokuapp.com/
 Integrantes del grupo:
 - Juan Pablo Argote Ortiz
 - Jesús Enrique Bozada Márquez
-- Sara Donaire
+- Sara Donaire Guillén
 - Anastasio Rafael Leon Gonzalez
 - Fermín Fernández Borrego
 
@@ -128,9 +128,10 @@ Se realizará un **commit** cuando se obtenga un avance importante en el proyect
 Ramas
 Para tener un mejor control de las funcionalidades, se ha creado una rama por cada una, existiendo en total 4 ramas secundarias y 1 rama principal:
 - master (principal)
-- twitter
+- facebook
 - pdf
 - telegram
+- calendar
 - aplicación Android (puesto que se desarrolla en otro lenguaje y no tiene nada que ver con las demás funcionalidades se encuentra en un repositorio aparte.
 
 Comandos utilizados en las ramas:
