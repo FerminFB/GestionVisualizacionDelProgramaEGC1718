@@ -1,18 +1,14 @@
-# Gestión Visualizacion Del Programa EGC 17/18
-Repositorio para llevar a cabo el trabajo sobre Gestión de visualización del programa, de la asignatura de EGC 17/18
+# Gestión Visualizacion Del Programa EGC 17/18 (Septiembre)
+Repositorio para llevar a cabo el trabajo sobre Gestión de visualización del programa, de la asignatura de EGC 17/18 para la segunda convocatoria de Septiembre.
 
-https://programa-egc.herokuapp.com/
-
-# Grupo 2
-
-# ID de opera: grupo 23 (en la url el 96)
+https://programa-egc-septiembre.herokuapp.com/
 
 Integrantes del grupo:
 - Juan Pablo Argote Ortiz
 - Jesús Enrique Bozada Márquez
-- Alejandro Gallego Segura
+- Sara Donaire Guillén
 - Anastasio Rafael Leon Gonzalez
-- Jesus Sosa Sánchez
+- Fermín Fernández Borrego
 
 Para instalar dependecias necesarias: 
 ```
@@ -44,10 +40,10 @@ Se aprovecha la revisión del Milestone 1 para aclarar cuales son las líneas qu
 Se prevee la utilización de una API aportada por otro equipo de trabajo, por tanto, se decide realizar durante este periodo de tiempo labores de estudio sobre las tecnologías, mientras el otro equipo aporta mayor información en cuanto a dicha API.
 
 Se realizará una instanciación base de un proyecto de Python sobre Django por Alejandro, debido a sus conocimientos, para que los demás compañeros puedan avanzar en un futuro en las siguientes funcionalidades:
-- Mostrar programa por Twitter. (Jesús)
 - Mostrar programa por Telegram. (Anastasio)
-- Mostrar programa en formato pdf. (Alejandro)
+- Mejorar el formato del PDF. (Fermin)
 - Mostrar programa como Calendar de Google. (Enrique)
+- Mostrar programa por Facebook. (Sara)
 - Mostrar programa en una aplicación Android. (Juan Pablo)
 
 En cuanto a la gestión de tareas se decide utilizar las issues de GitHub que serán gestionadas como cards desde la vista de Proyecto del repositorio, una tarea podrá encontrarse en tres fases diferentes:
@@ -87,7 +83,7 @@ Por último, se describe el entorno utilizado para desarrollar la aplicación en
 - **JRE:** 1.8.0_152-release-915-b01 amd64.
 - **JVM:** OpenJDK 64-Bit.
 - **SQLite:** versión 3.10.1.
-- **Jenkins**.
+- **TravisCI**.
 
 ### Gestión del cambio, incidencias y depuración
 Para la gestión de incidencias se realiza mediante **issues** de **Github**. Se crearán en caso de que se vaya a realizar un avance o cambio en el proyecto, incluido los errores que aparezcan o tareas que se vayan a desempeñar.
@@ -132,9 +128,10 @@ Se realizará un **commit** cuando se obtenga un avance importante en el proyect
 Ramas
 Para tener un mejor control de las funcionalidades, se ha creado una rama por cada una, existiendo en total 4 ramas secundarias y 1 rama principal:
 - master (principal)
-- twitter
+- facebook
 - pdf
 - telegram
+- calendar
 - aplicación Android (puesto que se desarrolla en otro lenguaje y no tiene nada que ver con las demás funcionalidades se encuentra en un repositorio aparte.
 
 Comandos utilizados en las ramas:
@@ -177,6 +174,6 @@ El entregable completo se realizará en nuestro repositorio de ***GitHub***, don
 
 ### Mapa de herramientas
 
-![alt text](https://github.com/enruiq/GestionVisualizacionDelProgramaEGC1718/blob/master/Documentacion/Imagenes/Herramientas.png)
+![Mapa de herramientas](https://github.com/enruiq/GestionVisualizacionDelProgramaEGC1718/blob/master/Documentacion/Imagenes/Herramientas.png)
 
 ***Imagen 1 - Mapa de Herramientas***

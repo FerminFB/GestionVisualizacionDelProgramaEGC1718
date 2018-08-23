@@ -8,8 +8,8 @@ install:
 notifications:
   email:
     recipients:
-    - jesosa94@gmail.com
-    - alex_gs92@hotmail.com
+    - enruiq@gmail.com
+    - juparor@gmail.com
     on_success: always  # default: change
     on_failure: always  # default: change
 deploy:
