@@ -1,7 +1,7 @@
 # Gestión Visualizacion Del Programa EGC 17/18 (Septiembre)
 Repositorio para llevar a cabo el trabajo sobre Gestión de visualización del programa, de la asignatura de EGC 17/18 para la segunda convocatoria de Septiembre.
 
-https://programa-egc.herokuapp.com/
+https://programa-egc-septiembre.herokuapp.com/
 
 Integrantes del grupo:
 - Juan Pablo Argote Ortiz
