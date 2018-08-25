@@ -18,6 +18,9 @@ pip install -r requirements.txt
 ### Introducción y contexto
 El grupo de gestión y visualización del programa, será el encargado de mostrar de manera clara y sencilla el programa de las jornadas. Mostrando información sobre la fecha ,el horario ,el ponente ,el lugar ,el tipo de la acividad si es taller o una charla y una pequeña descripción sobre dicha actividad . Además se podrán gestionar dichos eventos pudiendolos añadir a sistemas como Twitter, Telegram, Google Calendar, exportarlos a PDFs o verlos en una aplicación Android.
 
+Para el seguimiento, la gestión y la evolución de la aplicación Android se puede acceder a través del siguiente enlace al repositorio de la misma:
+https://github.com/Juparor/GestionVisualizacionDelProgramaEGC1718App
+
 ### Descripción del sistema
 
 
