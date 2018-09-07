@@ -13,3 +13,4 @@ reportlab==3.4.0
 requests==2.12.4
 static3==0.7.0
 whitenoise==3.3.1
+spyne==2.10
