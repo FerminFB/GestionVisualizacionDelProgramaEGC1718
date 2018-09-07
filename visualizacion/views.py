@@ -2,21 +2,26 @@
 from __future__ import unicode_literals
 
 from reportlab.lib.enums import TA_CENTER, TA_JUSTIFY
-from reportlab.lib.pagesizes import A4, letter
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
-from reportlab.lib.units import inch
 
 from src import settings
 from visualizacion.models import Programa, Charlas
 import sqlite3
-from io import BytesIO
 from django.http import HttpResponse
 from reportlab.lib import colors
-from reportlab.pdfgen import canvas
 from reportlab.platypus import Table, TableStyle, Paragraph, SimpleDocTemplate, Image, Spacer
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 from reportlab.lib.pagesizes import A4, inch, landscape
+from django.views.decorators.csrf import csrf_exempt
+from spyne.application import Application
+from spyne.decorator import rpc
+from spyne.model.primitive import Unicode
+from spyne.protocol.soap import Soap11
+from spyne.server.django import DjangoApplication
+from spyne.service import ServiceBase
+from spyne.model.complex import *
+
 
 
 def programa_list(request):
@@ -120,4 +125,37 @@ def export_pdf(request):
     elements.append(t)
     doc.build(elements)
     return response
+
+
+class SoapService(ServiceBase):
+    @rpc(_returns=Array(Array(Unicode)))
+    def getEventos(ctx):
+        res = []
+        bd = sqlite3.connect("programa.db")
+        cursor = bd.cursor()
+        sql = "select dia, fecha, hora_inicio, hora_fin, titulo from programa"
+        resultado = cursor.execute(sql)
+        res.extend(resultado)
+        return res
+
+    @rpc(_returns=Array(Array(Unicode)))
+    def getCharlas(ctx):
+        res = []
+        bd = sqlite3.connect("programa.db")
+        cursor = bd.cursor()
+        sql = "select evento, titulo, ponentes, resumen from charlas"
+        resultado = cursor.execute(sql)
+        res.extend(resultado)
+        return res
+
+
+soap_app = Application(
+    [SoapService],
+    tns='django.soap.example',
+    in_protocol=Soap11(validator='lxml'),
+    out_protocol=Soap11(),
+)
+
+django_soap_application = DjangoApplication(soap_app)
+my_soap_application = csrf_exempt(django_soap_application)
 
