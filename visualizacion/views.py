@@ -133,7 +133,7 @@ class SoapService(ServiceBase):
         res = []
         bd = sqlite3.connect("programa.db")
         cursor = bd.cursor()
-        sql = "select dia, fecha, hora_inicio, hora_fin, titulo from programa"
+        sql = "select dia, fecha, hora_inicio, hora_fin, titulo,sessioncode from programa"
         resultado = cursor.execute(sql)
         res.extend(resultado)
         return res
@@ -143,7 +143,7 @@ class SoapService(ServiceBase):
         res = []
         bd = sqlite3.connect("programa.db")
         cursor = bd.cursor()
-        sql = "select evento, titulo, ponentes, resumen from charlas"
+        sql = "select evento, titulo, ponentes, resumen,sessioncode from charlas"
         resultado = cursor.execute(sql)
         res.extend(resultado)
         return res
