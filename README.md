@@ -32,11 +32,11 @@ El sistema es una aplicación web Python basada en el framework Django y una apl
 
 El objetivo principal que se propone cumplir antes de es la realización de una o más reuniones con objetivo de conocernos como equipo, llegar a un acuerdo en las nuevas funcionalidades a desarrollar y de las trazas generales que se deben seguir para este cometido.
 
-En el trascurso de estas reuniones se ha decido utilizar un grupo de Whatsapp como canal principal de comunicación debido a la situación laboral de algunos componentes del grupo. Adicionalmente se decidió que la gestión de tareas se realice a través de Trello.
 
 Se partira del código heredado del anterior grupo de Visualización de la primera convocatoria. Por tanto se realizara un fork de su repositorio (https://github.com/enruiq/GestionVisualizacionDelProgramaEGC1718)
 
-Tras una serie de reuniones de definen los objetivos para este Milestone:
+En el trascurso de estas reuniones se ha decido utilizar un grupo de Whatsapp como canal principal de comunicación debido a la situación laboral de algunos componentes del grupo. Y definieron los objetivos para este Milestone:
+
 - Mostrar programa por Telegram - Anastacio
 - Mejorar el formato del PDF - Fermín
 - Mostrar programa como Calendar de Google - Enrique
