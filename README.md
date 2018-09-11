@@ -45,9 +45,11 @@ Se prevee la utilización de una API aportada por otro equipo de trabajo, por ta
 Se realizará una instanciación base de un proyecto de Python sobre Django por Alejandro, debido a sus conocimientos, para que los demás compañeros puedan avanzar en un futuro en las siguientes funcionalidades:
 - Mostrar programa por Telegram. (Anastasio)
 - Mejorar el formato del PDF. (Fermin)
-- Mostrar programa como Calendar de Google. (Enrique)
+- Mostrar programa como Calendar de Google. (Enrique)** 
 - Mostrar programa por Facebook. (Sara)
 - Mostrar programa en una aplicación Android. (Juan Pablo)
+
+**Por motivos ajenos al proyecto, la integración con Google Calendar se aplaza para la convocatoria de Diciembre.
 
 En cuanto a la gestión de tareas se decide utilizar las issues de GitHub que serán gestionadas como cards desde la vista de Proyecto del repositorio, una tarea podrá encontrarse en tres fases diferentes:
 
