@@ -28,50 +28,33 @@ https://github.com/Juparor/GestionVisualizacionDelProgramaEGC1718App
 
 La planificación realizada en este proyecto ha estado orientada al seguimiento por parte de los profesores en los diferentes Milestones, por tanto, se presentará dividida en secciones siguiendo el orden de éstos.
 
-#### Milestone 1 - Ecosistema preparado.
+#### Milestone 6 - Mejoras segunda convocatoria
 
-El objetivo principal que se propone cumplir antes de este milestone es la realización de una o más reuniones con objetivo de conocernos como equipo, llegar a un acuerdo de la idea a desarrollar y de las trazas generales que se deben seguir para este cometido.
+El objetivo principal que se propone cumplir antes de es la realización de una o más reuniones con objetivo de conocernos como equipo, llegar a un acuerdo en las nuevas funcionalidades a desarrollar y de las trazas generales que se deben seguir para este cometido.
 
-En el trascurso de estas reuniones se ha decido utilizar un grupo de Telegram como canal principal de comunicación debido a la situación laboral de tres componentes del grupo. Adicionalmente se decidió que la gestión de tareas se realice a través de GitHub, como se detallará más adelante.
+En el trascurso de estas reuniones se ha decido utilizar un grupo de Whatsapp como canal principal de comunicación debido a la situación laboral de algunos componentes del grupo. Adicionalmente se decidió que la gestión de tareas se realice a través de Trello.
 
-Dentro de las tareas a realizar durante este periodo de tiempo, se debe destacar la de conocimiento de dependencias con otros subsistemas del proyecto general. Esperando recabar dicha información a través del equipo de integración.
+Se partira del código heredado del anterior grupo de Visualización de la primera convocatoria. Por tanto se realizara un fork de su repositorio (https://github.com/enruiq/GestionVisualizacionDelProgramaEGC1718)
 
-#### Milestone 2 - Sistema funcionando con incremento.
+Tras una serie de reuniones de definen los objetivos para este Milestone:
+- Mostrar programa por Telegram - Anastacio
+- Mejorar el formato del PDF - Fermín
+- Mostrar programa como Calendar de Google - Enrique
+- Mostrar programa por Facebook - Sara
+- Mostrar programa en una aplicación Android - Juan Pablo
+- Creación de un web service que pueda consumir la app Android - Fermín
 
-Se aprovecha la revisión del Milestone 1 para aclarar cuales son las líneas que debe seguir el proyecto para adaptarse a las dependencias encontradas.
+Por motivos ajenos al proyecto la tareas de implementación de Google Calendar, Facebook y Telegram no se han terminado a tiempo para este Milestone
 
-Se prevee la utilización de una API aportada por otro equipo de trabajo, por tanto, se decide realizar durante este periodo de tiempo labores de estudio sobre las tecnologías, mientras el otro equipo aporta mayor información en cuanto a dicha API.
 
-Se realizará una instanciación base de un proyecto de Python sobre Django por Alejandro, debido a sus conocimientos, para que los demás compañeros puedan avanzar en un futuro en las siguientes funcionalidades:
-- Mostrar programa por Telegram. (Anastasio)
-- Mejorar el formato del PDF. (Fermin)
-- Mostrar programa como Calendar de Google. (Enrique)** 
-- Mostrar programa por Facebook. (Sara)
-- Mostrar programa en una aplicación Android. (Juan Pablo)
+En cuanto a la gestión de tareas se decide utilizar Trello donde se definirán las tareas mencionadas anteriormente como tarjetas que podran esta en tres estados diferente.
 
-**Por motivos ajenos al proyecto, la integración con Google Calendar se aplaza para la convocatoria de Diciembre.
-
-En cuanto a la gestión de tareas se decide utilizar las issues de GitHub que serán gestionadas como cards desde la vista de Proyecto del repositorio, una tarea podrá encontrarse en tres fases diferentes:
-
-- **ToDo:** aquellas tareas que están pendientes de su comienzo.
+- **ToDo**: aquellas tareas que están pendientes de su comienzo.
 
 - **In progress:** aquellas tareas que ya han comenzado.
 
-- **Done:** aquellas tareas que han sido terminadas. 
+- **Done:** aquellas tareas que han sido terminadas.
 
-#### Milestone 3 - Taller de automatización.
-
-De cara a este Milestone, debido a un gran retraso en las funcionalidades, causado por la ausencia de la API que debe ser proporcionada por el equipo de programa, se decide implementar las funcionalidades en torno a ficheros de hoja de cálculo de excel.
-
-Las principales tareas planificadas para este periodo de tiempo serán la implementación de una base de datos SQLite, en la que introducir la información del programa que se obtendrá de dichos ficheros de hoja de cálculo. El estudio de que herramientas utilizar para la automatización de la construcción, la ejecución de pruebas y la integración.
-
-#### Milestone 4 - Entrega y defensa de trabajos.
-
-Para este Milestone, tras la revisión del anterior con el profesor, se llega a la conclusión de que se debe comenzar a realizar las labores de pruebas, integración y automatización sin dejar atras la funcionalidad, debido al retraso existente. Por tanto, se decide que los componentes del grupo continuen el desarrollo de sus funcionalidades hasta la realización de una reunión una semana del Milestone para comenzar en común las tareas mencionadas anteriormente.
-
-Debido a una interacción con el grupo de programa en el que se aporta, por parte de ellos, una posible solución a la ausencia de API que consumir, se estudia la posibilidad de cambiar el desarrollo para adaptarlo a la propuesta, debido a la falta de tiempo y el retraso acumulado se decide ignorar la propuesta y continuar con la planificación actual.
-
-Por último, de cara a la entrega se decide avanzar lo máximo posible en las tareas comunes para el beneficio de todos los componentes del grupo por encima del avance en las tareas individuales
 
 ### Entorno de desarrollo
 A continuación se describen los entornos de desarrollo utilizados por el equipos. Se presentan dos diferentes debido a las necesidades del proyecto.
@@ -103,18 +86,6 @@ Para la creación de éstas hemos utilizado la siguiente plantilla:
 - Miembro o miembros que la han creado, en el caso de que se tenga alguna duda o encuentre un problema se asignará a todos los miembros del grupo ya sea para que se resuelva con la mayor rapidez posible o bien por si alguien en concreto no supiera resolverlo.  En caso de que se encuentre un “bug” se adjuntará el error encontrado en la descripción de la incidencia.
 La incidencia solo se cerrará en el caso de que se esté seguro que se ha terminado o se haya solucionado, todos los miembros podrán añadir comentarios si lo ven oportuno.
 
-Etiquetas utilizadas:
-- Desarrollo
-- Documentación
-- Planificación
-- Despliegue
-- Bug
-- Otros
-- Formación
-- Reunión
-
-Tareas:
-La gestión de las tareas se controlará mediante el tablero proporcionado por **Github**, por lo que estas pasarán por tres estados que se irán modificando manualmente según sea oportuno: **To Do**, **In Progress** y **Done**.
 
  
 
@@ -131,13 +102,14 @@ Se realizará un **commit** cuando se obtenga un avance importante en el proyect
 - ```git log -p```				# listar todos los commits realizados
 
 Ramas
-Para tener un mejor control de las funcionalidades, se ha creado una rama por cada una, existiendo en total 4 ramas secundarias y 1 rama principal:
+Para tener un mejor control de las funcionalidades, se ha creado una rama por cada una, existiendo en total 5 ramas secundarias y 1 rama principal:
 - master (principal)
 - facebook
 - pdf
 - telegram
 - calendar
 - aplicación Android (puesto que se desarrolla en otro lenguaje y no tiene nada que ver con las demás funcionalidades se encuentra en un repositorio aparte.
+- WebService
 
 Comandos utilizados en las ramas:
 - ```git branch```			# ver la rama en la que estás situado
