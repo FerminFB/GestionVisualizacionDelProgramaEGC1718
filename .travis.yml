@@ -15,7 +15,7 @@ notifications:
 deploy:
   provider: heroku
 
-  api_key: bad56c57-203c-4fbf-b459-bef745e1fd61
+  api_key: 1789a6f9-2289-4692-bc72-23a790ce40bd
   app: visualizacion-egc-septiembre
   on:
     repo: FerminFB/GestionVisualizacionDelProgramaEGC1718
