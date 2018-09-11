@@ -27,6 +27,7 @@ https://github.com/Juparor/GestionVisualizacionDelProgramaEGC1718App
 ### Descripción del sistema
 El sistema es una aplicación web Python basada en el framework Django y una aplicación Android. La aplicación web muestra la información sobre las charlas y eventos del programa ordenada por fechas y organizadas por tabla, permitiendo compartir esa información via Twitter y descargando el programa entero como PDF.
 
+La aplicación android consiste en un app de interfaz sencilla en la que el usuario tras acceder al ella podrá seleccionar uno de los días de las jornadas. Esto le permitirá ver un listado de las charlas que transcurrirán durante ese día, desde donde puede acceder al detalle de cada una de ellas.
 
 #### Milestone 6 - Mejoras segunda convocatoria
 
