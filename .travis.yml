@@ -8,17 +8,17 @@ install:
 notifications:
   email:
     recipients:
-    - enruiq@gmail.com
+    - ferminffb@gmail.com
     - juparor@gmail.com
     on_success: always  # default: change
     on_failure: always  # default: change
 deploy:
   provider: heroku
 
-  api_key: fa9f8883-2d4c-4590-85ae-1ed7d7fda7f0
-  app: programa-egc
+  api_key: bad56c57-203c-4fbf-b459-bef745e1fd61
+  app: visualizacion-egc-septiembre
   on:
-    repo: enruiq/GestionVisualizacionDelProgramaEGC1718
+    repo: FerminFB/GestionVisualizacionDelProgramaEGC1718
 
 script:
  - python manage.py test visualizacion/
