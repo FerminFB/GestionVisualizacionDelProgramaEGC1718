@@ -14,6 +14,8 @@ Para instalar dependecias necesarias:
 ```
 pip install -r requirements.txt
 ```
+### Resumen
+El módulo de gestión de la visualización se encarga de recoger la información suministrado por el módulo de gestión del programa para unificarla y mostrarla de manera clara. Durante este milestone el grupo se había añadir nuevas herramientas como Google Calendar, Telegram y Facebook,arreglar errores en la generación de pdfs, mejorar la app android. Al final el grupo solo ha podido completar la mejora de app y la corrección de los ficheros pdfs debido al abandono de la asigantura de algunos miembros del grupo.
 
 ### Introducción y contexto
 El grupo de gestión y visualización del programa, será el encargado de mostrar de manera clara y sencilla el programa de las jornadas. Mostrando información sobre la fecha ,el horario ,el ponente ,el lugar ,el tipo de la acividad si es taller o una charla y una pequeña descripción sobre dicha actividad . Además se podrán gestionar dichos eventos pudiendolos añadir a sistemas como Twitter, Telegram, Google Calendar, exportarlos a PDFs o verlos en una aplicación Android.
@@ -21,12 +23,10 @@ El grupo de gestión y visualización del programa, será el encargado de mostra
 Para el seguimiento, la gestión y la evolución de la aplicación Android se puede acceder a través del siguiente enlace al repositorio de la misma:
 https://github.com/Juparor/GestionVisualizacionDelProgramaEGC1718App
 
+
 ### Descripción del sistema
+El sistema es una aplicación web Python basada en el framework Django y una aplicación Android. La aplicación web muestra la información sobre las charlas y eventos del programa ordenada por fechas y organizadas por tabla, permitiendo compartir esa información via Twitter y descargando el programa entero como PDF.
 
-
-### Planificación del proyecto
-
-La planificación realizada en este proyecto ha estado orientada al seguimiento por parte de los profesores en los diferentes Milestones, por tanto, se presentará dividida en secciones siguiendo el orden de éstos.
 
 #### Milestone 6 - Mejoras segunda convocatoria
 
